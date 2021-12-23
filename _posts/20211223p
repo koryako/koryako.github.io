@@ -1,0 +1,59 @@
+---
+layout: post
+title: "深度学习的基础"
+subtitle: '自我感悟'
+author: "koryako"
+header-style: text
+tags:
+  - 深度学习
+---
+
+寄语: 孩儿们，操练起来！！
+
+---
+
+2016年10月开始接触人工智能技术，暂且把他叫做深度学习，因为离 `AGI通用人工智能` 还有段距离。
+
+目前记录了一些笔记和一些新的技术需要记录下来，包括：*深度学习的基础-线性回归、梯度下降、误差和成本函数等*
+
+新技术包括自动驾驶 [wellcar](https://github.com/roertech/wellCar) 项目，这个项目只有一个架子，参考了一些BAT巨头的程序架构， [apollo](https://github.com/apolloauto) 百度无人车项目，不是JAVA 的apollo ,[网站](http://apollo.auto/)戳这里！
+
+人机对话系统，好吧！我还在研究！
+
+让我们开始从神经网络开始，人脑里有亿万神经元，神经元又彼此链接，如下图每个神经元都有自己的值，每个神经元都有自己的权重或者叫概率，这个概率是可以通过自我学习得到，这种学习叫做训练！
+
+![权重](https://koryako.github.io/img/in-post/post-start/junheng.png)
+
+我可以把上图转换为一个公式
+
+![公式](https://koryako.github.io/img/in-post/post-start/gongshi.png)
+每个输入x和自己的权重W相乘然后相加。这是加权的算法
+
+然后我们对这个和的值设置一个阀值，用于计算这个阀值的函数称为激活函数
+
+![激活函数sigmoid](https://koryako.github.io/img/in-post/post-start/sigmoid.png)
+
+除了sigmoid 激活函数还有  tanh  和　Relu （ｒｅｃｔｉｆｉｅｄ　linear unit）
+
+![tanh](https://koryako.github.io/img/in-post/post-start/tanh.png)
+
+![relu](https://koryako.github.io/img/in-post/post-start/relu.png)
+
+
+循环神经网络公式如下
+
+
+
+s=fh=tanh(Whi*X+b1)　　求出当前输入层到隐藏层
+
+o=fo=softmax(Woh*S+b2)　求出输出层
+
+St=tanh(Whi*Xt+Whh*St-1+b1)　　加上一次的隐藏层S，当前隐藏层＋上一个时刻的St-1 的加权，使用权重状态转换，或者说这个权重去学习上次到这一次的状态
+
+Ot=softmax(Woh*St+b2)　当前状态到输出
+
+Whi=输入层到隐藏层的权重矩阵
+
+Woh=隐藏层到输出层的权重矩阵
+
+Whh=隐藏层到隐藏层的权重矩阵
