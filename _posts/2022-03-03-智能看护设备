@@ -1,0 +1,31 @@
+智能看护设备
+
+模块一 视觉系统 
+A. 视频概要生成，对以往的视频数据进行视频概要标注
+B. 以AR方式对动作和行为进行可视化回放，计算单元使用rust 或c++ webasseble还是用原生以保护隐私，使用deepfashiion2 try-on 替换打码 但需要密码deepfashiion2_json_for_validation.zip
+C. 对画面进行4k 超清
+D. 小物体训练 easyyibiao 标注 ui data mask  pip2pix 生成数据集
+
+
+模块二 物理机器
+A. spot 
+B. 智能柔性外骨骼 
+
+模块三 智能语音助理
+中文语义识别，中文ner 截取关键信息，数据字典或数据库换取信息或知识图谱，action,任务管理器
+
+模块四 中枢
+
+rl
+
+预估补货
+
+模块四 部署与推理加速
+rust 加载tensorflow rust 启动服务器 https://blog.csdn.net/a172742451/article/details/89442375
+https://blog.csdn.net/wsp_1138886114/article/details/109580315
+hongmeng app 部署
+分布式数据库block
+底层ai 框架
+
+nodejs 加载rust  https://www.secondstate.io/articles/getting-started-with-rust-function/ https://github.com/WasmEdge/WasmEdge
+量化移动化原理
