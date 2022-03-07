@@ -1,9 +1,9 @@
 智能看护设备
 
 模块一 视觉系统 
-A. 视频概要生成，对以往的视频数据进行视频概要标注
+A. 视频概要生成，对以往的视频数据进行视频概要标注（Cycle-SUM Cycle-consistent Adversarial LSTM Networks for Unsupervised Video Summarization）
 B. 以AR方式对动作和行为进行可视化回放，计算单元使用rust 或c++ webasseble还是用原生以保护隐私，使用deepfashiion2 try-on 替换打码 但需要密码deepfashiion2_json_for_validation.zip
-C. 对画面进行4k 超清
+C. 对画面进行4k 超清 （PP-MSVSR Multi-Stage Video Super-Resolution）
 D. 小物体训练 easyyibiao 标注 ui data mask  pip2pix 生成数据集
 
 
