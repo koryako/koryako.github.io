@@ -140,8 +140,8 @@ You can easily get started by modifying `_config.yml`:
 
 ```
 # Site settings
-title: Hux Blog             # title of your website
-SEOTitle: Hux Blog			# check out docs for more detail
+title: Jay Blog             # title of your website
+SEOTitle: jay Blog			# check out docs for more detail
 description: "Cool Blog"    # ...
 
 # SNS settings      
